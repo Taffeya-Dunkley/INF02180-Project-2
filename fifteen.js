@@ -1,14 +1,6 @@
 //INFO 2180 PROJECT 2
 // Extra feature:
-// Mutiple background 
-
- 
-
-
-
-
-
-
+// Mutiple backgrounds
 
 var initialState = [];
 var x = 0;
@@ -29,13 +21,6 @@ window.onload = function(){
             changeImage(this.value)
         });
     }
-
-
-
-
-
-
-
 
 
     document.getElementById("shufflebutton").onclick = function() {
@@ -64,14 +49,6 @@ window.onload = function(){
         });
     }
 }
-
-
-
-
-
-
-
-
 
 //Checks if the puzzle piece is movable
 function start(){
@@ -104,16 +81,6 @@ function ismovable(piece) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 //switches piece with blank space
 function switcher(piece, animate) {
     btop = piece.style.top;
@@ -143,16 +110,6 @@ function shuffle(pieces) {
         switcher(piece[0], false);
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 //Prompts users to select a background image
@@ -188,12 +145,6 @@ function image_shuffle(){
     }
  changeImage(val); 
 }
-
-
-
-
-
-
 
 //allows background image to be changed
 function changeImage(val) {
